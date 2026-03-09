@@ -70,8 +70,9 @@
 
         /* --- Home/Hero --- */
         .hero { flex-direction: row; justify-content: space-between; text-align: left; }
-        .hero-text h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 20px; }
-        .hero-text p { font-size: 1.3rem; color: var(--text-sub); margin-bottom: 30px; max-width: 550px; }
+        .hero-text h1 { font-size: 4.5rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800; }
+        .hero-text h1 span { background: linear-gradient(to right, var(--accent-blue), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-text p { font-size: 1.4rem; color: var(--text-sub); margin-bottom: 30px; max-width: 550px; }
 
         .profile-container {
             position: relative;
@@ -122,7 +123,7 @@
 
         @media (max-width: 900px) {
             .hero { flex-direction: column-reverse; text-align: center; }
-            .hero-text h1 { font-size: 3rem; }
+            .hero-text h1 { font-size: 3.5rem; }
             .profile-container { width: 280px; height: 280px; margin-bottom: 40px; }
         }
     </style>
@@ -143,8 +144,8 @@
     <section id="home" class="hero">
         <div class="hero-text">
             <h1>Anam <br><span>Arfat</span></h1>
-            <p>Mathematics Student at BZU Multan | CGPA 3.77 <br>Specializing in Data Analysis and Python Web Development.</p>
-            <a href="#contact" class="btn">Send a Message</a>
+            <p>BS Mathematics Student (Semester 6) at BZU Multan.<br>CGPA 3.77 | Data Analyst | Python Web Developer</p>
+            <a href="#contact" class="btn">Send Me a Message</a>
         </div>
         <div class="profile-container" data-tilt>
             <div class="profile-img"></div>
@@ -155,9 +156,9 @@
         <h2 class="section-title">Academic <span>Profile</span></h2>
         <div class="card" style="max-width: 900px;" data-tilt>
             <p style="font-size: 1.3rem; line-height: 1.8;">
-                Currently in my <strong>6th Semester</strong> at CASPAM, Bahauddin Zakariya University Multan. 
-                My mathematical background fuels my <strong>Critical Thinking</strong> and <strong>Data Analysis</strong> skills, 
-                allowing me to approach programming with a unique problem-solving mindset.
+                Currently studying at <strong>CASPAM, Bahauddin Zakariya University Multan</strong>. 
+                With a <strong>3.77 CGPA</strong>, I leverage my mathematical foundation to solve technical problems 
+                through <strong>Critical Thinking</strong> and <strong>Modern Programming</strong>.
             </p>
         </div>
     </section>
@@ -197,23 +198,23 @@
         <div class="project-grid">
             <a href="https://github.com/Arfat-Anam/Bank-Management-system" target="_blank" class="card project-card" data-tilt>
                 <h3>Bank Management</h3>
-                <p>A full-featured banking simulation using advanced Python OOP concepts.</p>
-                <span style="color:var(--accent-blue)">View on GitHub →</span>
+                <p>Python OOP system managing accounts with high logic efficiency.</p>
+                <span style="color:var(--accent-blue)">View Project →</span>
             </a>
             <a href="https://github.com/Arfat-Anam/AI-Exam-Generator" target="_blank" class="card project-card" data-tilt>
                 <h3>AI Exam Generator</h3>
-                <p>Smart automated tool for creating examinations using AI logic.</p>
-                <span style="color:var(--accent-blue)">View on GitHub →</span>
+                <p>Automated tool for creating examinations using intelligent algorithms.</p>
+                <span style="color:var(--accent-blue)">View Project →</span>
             </a>
             <a href="https://github.com/Arfat-Anam/Number-Guessing-Game" target="_blank" class="card project-card" data-tilt>
-                <h3>Logic Guessing Game</h3>
-                <p>Interactive Python game focusing on algorithmic efficiency.</p>
-                <span style="color:var(--accent-blue)">View on GitHub →</span>
+                <h3>Number Guessing</h3>
+                <p>An interactive game exploring mathematical probability and logic.</p>
+                <span style="color:var(--accent-blue)">View Project →</span>
             </a>
             <a href="https://github.com/Arfat-Anam/Ggoogle_Sign-in_-pg-clone-" target="_blank" class="card project-card" data-tilt>
-                <h3>Google UI Clone</h3>
-                <p>High-fidelity frontend clone of the Google Sign-in interface.</p>
-                <span style="color:var(--accent-blue)">View on GitHub →</span>
+                <h3>Google Sign-in Clone</h3>
+                <p>Pixel-perfect frontend recreation of the Google Sign-in interface.</p>
+                <span style="color:var(--accent-blue)">View Project →</span>
             </a>
         </div>
     </section>
@@ -222,21 +223,15 @@
         <h2 class="section-title">Get In <span>Touch</span></h2>
         <div class="card contact-container" data-tilt data-tilt-glare="false">
             <form action="#" style="width: 100%;">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                </div>
+                <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                <div class="form-group"><textarea rows="5" placeholder="Your Message" required></textarea></div>
                 <button type="submit" class="btn">Send Message</button>
             </form>
-            <div style="margin-top: 30px; display: flex; gap: 20px;">
-                <a href="https://github.com/Arfat-Anam" target="_blank" style="color:white; font-size: 1.5rem;"><i class="fab fa-github"></i></a>
-                <a href="#" style="color:white; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:anamarfatarfat@gmail.com" style="color:white; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+            <div style="margin-top: 30px; display: flex; gap: 30px;">
+                <a href="https://github.com/Arfat-Anam" target="_blank" style="color:white; font-size: 2rem;"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/anam-arfat-a643a0372 target="_blank" style="color:white; font-size: 2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:anamarfatarfat@gmail.com" style="color:white; font-size: 2rem;"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -244,10 +239,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".card, .profile-container"), {
-            max: 10,
+            max: 12,
             speed: 400,
             glare: true,
-            "max-glare": 0.1,
+            "max-glare": 0.15,
         });
     </script>
 </body>
